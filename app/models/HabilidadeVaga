@@ -1,0 +1,27 @@
+const Habilidade = require("./Habilidade");
+
+class HabilidadeVaga extends Habilidade {
+    peso = 0;
+
+    /*
+    constructor(descricao, tempo_experiencia){
+        this.descricao = descricao;
+        this.tempo_experiencia = tempo_experiencia;
+        this.peso = peso;
+    }
+    */
+    constructor(habilidadeCarga){
+        super(habilidadeCarga.descricao, habilidadeCarga.tempo_experiencia);
+        this.peso = habilidadeCarga.peso;
+        //console.log("aaaa1");
+        //console.log(this);
+        //console.log(habilidadeCarga);
+        //console.log("aaaa2");
+    }
+    
+    serializaHabilidade(){
+        return `${this.descricao} (${this.tempo_experiencia}), peso ${this.peso}`;
+    }
+}
+
+module.exports = HabilidadeVaga
