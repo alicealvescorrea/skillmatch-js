@@ -14,6 +14,10 @@ class ViewCandidato {
         this.comum = new Comum();
     }
 
+    candidato(){
+        return this.candidato;
+    } 
+
     prompt(){
         this.pedeNome(); 
         this.pedeArea();

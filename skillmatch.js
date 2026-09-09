@@ -45,7 +45,26 @@ async function busca_vagas(){
         return new Vaga(item)
     });
 
-    console.log(vagas);
+    hab_vaga = [];
+    console.log(vagas)
+    habilidadesCandidato = view_candidato.candidato().habilidades;
+    const lista = vagas.map( (vaga) => {
+        console.log("opa");
+        vaga.habilidadesVaga.foreach((habilidade)=>{
+            if (habilidade.descricao){
+                return new HabilidadeVaga(habilidade.descricao, habilidade.tempo_experiencia, habilidade.peso)
+            }
+        });
+        return vaga;
+        /*
+        hab_vaga = vagas.foreach((habilidadesVaga)=>
+            {
+
+            }
+        );
+        */
+        //return vaga;
+    });
 }
 
 
@@ -55,6 +74,9 @@ try {
 } catch (erro) {
     console.log(erro);
 }
+
+ 
+
 /*
 view_Candidato = new ViewCandidato();
 view_Candidato.prompt();
