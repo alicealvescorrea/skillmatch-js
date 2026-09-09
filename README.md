@@ -16,3 +16,6 @@ node skillmatch.js
 O sistema solicitará os dados do usuário, suas habilidades, analizará habilidades faltantes, recomendação de estudo e nivel de compatibilidade com a vaga.
 
 Para fazer a recomendação de estudo, foi dado pra cada habilidade da vaga, um peso, o qual determinará o percentual de quanto que falta estudar cada habilidade para que o usuário pudesse ter preenchido os requisitos da vaga completamente.
+
+Link Trello:
+https://trello.com/invite/b/6a88d163e0988615e98a170f/ATTI0f78b2b4d6260f323acae2e5d7e33193DC17ECE2/skillmatch-js
